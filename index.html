@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div
+      class="min-w-full flex flex-col justify-center items-center gap-2 bg-gradient-to-br from-cyan-300 to-blue-700 min-h-screen"
+    >
+      <form
+        class="new-list-item flex flex-col items-center justify-center"
+        id="form"
+        action="#"
+      >
+        <div class="new-list">
+          <input
+            type="text"
+            id="new-list"
+            class="p-1 rounded-md outline-none pl-2 placeholder:text-black"
+            placeholder="New To Do List..."
+          />
+          <input
+            type="submit"
+            id="button"
+            class="bg-emerald-800 cursor-pointer text-white py-2 px-3 rounded-md"
+            value="Enter"
+          />
+        </div>
+      </form>
+      <ul class="list-none font-mono" id="list-group"></ul>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
